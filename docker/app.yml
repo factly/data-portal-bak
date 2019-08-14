@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+    postgres:
+        extends:
+            file: postgres11.yml
+            service: postgres
+    dremio:
+        extends:
+            file: dremio.yml
+            service: dremio
